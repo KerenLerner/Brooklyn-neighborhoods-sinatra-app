@@ -1,0 +1,11 @@
+<h1>Where in BK do you belong?  The answer is...</h1>
+
+<% if @matches.empty?  %>
+<%=   "Sorry, none of the Brooklyn neighborhoods in our database meet your criteria." %>
+<% else  @matches.collect do |neighborhood| %>
+<li><%= neighborhood.name %></li>
+<% end %>
+<% end %>
+
+
+

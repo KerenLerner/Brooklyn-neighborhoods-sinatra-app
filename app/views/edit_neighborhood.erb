@@ -1,0 +1,39 @@
+<h2>Edit Neighborhood</h2>
+
+<form method="post" action="/neighborhood/<%=@neighborhood.id%>"><!-- 
+Neighborhood.create(name: "Delete this one", average_price: 9000, near_park: false, stuff_to_do: false, time_to_manhattan: 27, architecture: "None") -->
+
+<label>Name</label>
+  <input type="text" name="name">
+<br>
+<br> 
+<label>Average Monthly Rent for a 1 Bedroom</label>
+  <input type="text" name="average_price">
+<br>
+<br> 
+<label>Near Prospect Park?</label>
+<br>
+ <input type="radio" name="near_park" value="true" checked>Yes
+  <br><input type="radio" name="near_park" value="false">No
+  <br>
+<br>
+<label>Lots of restaurants, cafes, and bars?</label>
+<br>
+<input type="radio" name="stuff_to_do" value="true" checked>Yes.<br>
+  <input type="radio" name="stuff_to_do" value="false">No. 
+<br>
+<br>
+<label>Architecture:</label> 
+<br>
+<input type="radio" name="architecture" value="Brownstone" checked>Classic brownstones 
+<br>
+<input type="radio" name="architecture" value="Victorian" checked>Victorians (bring on the turrets!)<br>
+<input type="radio" name="architecture" value="Modern" checked>Loads of new construction
+<br><br><label>Maximum commute time to Union Square in minutes</label>
+<input type="text" name="time_to_manhattan">
+
+<br>
+<br>
+<input type="submit" value="Add Neighborhood">
+
+</form>

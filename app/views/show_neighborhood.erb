@@ -1,0 +1,25 @@
+
+<h3><%= @neighborhood.name %> </h3>
+
+<%= "Average Monthly Price: $#{@neighborhood.average_price}" %>
+<br>
+<%= "Near Prospect Park? #{@neighborhood.near_park}" %>
+<br>
+<%= "Stuff to do? #{@neighborhood.stuff_to_do}" %>
+<br>
+<%= "Commute to Union Sq in minutes: #{@neighborhood.time_to_manhattan}" %>
+<br>
+<%= "Architecture: #{@neighborhood.architecture}" %>
+
+<form method="post" action="/<%=@neighborhood.id%>/deleted_neighborhood">
+
+<input type="submit" value="Delete">
+<br>
+<br>
+<br>
+</form>
+
+
+
+
+

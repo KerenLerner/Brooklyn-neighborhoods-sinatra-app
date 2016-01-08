@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="/style.css" />
+</head>
+<body>
+
+
+
+<h1>There's Way More to Brooklyn than the L Train</h1>
+<h2>Which of these Brooklyn neighborhoods is right for you?</h2>
+
+
+
+
+<% @neighborhoods.each do |neighborhood| %>
+<li><%= neighborhood.name %></li>
+<% end  %>
+
+
+
+<div><a href= "/quiz">Take the Quiz!</a></div>
+</body>
+</html>

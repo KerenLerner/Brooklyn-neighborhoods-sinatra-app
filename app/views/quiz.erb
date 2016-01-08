@@ -1,0 +1,40 @@
+<h2>Which Neighborhood's Right for You?</h2>
+
+<form method="post" action="/results">
+<label>Name</label>
+  <input type="text" name="seeker_name">
+<br>
+<br> 
+<label>My Maximum Monthly Rent*</label>
+  <input type="text" name="seeker_rent">
+<br>
+<br> 
+<label>I want to live near Prospect Park</label>
+<br>
+ <input type="radio" name="seeker_park" value="true" checked>Yes, please!
+  <br><input type="radio" name="seeker_park" value="false">I hate trees!
+  <br>
+<br>
+<label>I need plenty of restaurants, cafes, and bars in my neighborhood</label>
+<br>
+<input type="radio" name="seeker_activites" value="true" checked>The more the better!<br>
+  <input type="radio" name="seeker_activites" value="false">I prefer quiet. 
+<br>
+<br>
+<label>My favorite Brooklyn architecture:</label> 
+<br>
+<input type="radio" name="seeker_architecture" value="Brownstone" checked>Classic brownstones 
+<br>
+<input type="radio" name="seeker_architecture" value="Victorian" checked>Victorians (bring on the turrets!)<br>
+<input type="radio" name="seeker_architecture" value="Modern" checked>Loads of new construction
+<br><br><label>Maximum commute time to Union Sq**</label>
+<input type="text" name="seeker_commute">
+
+<br>
+<br>
+<input type="submit" value="Find my hood">
+<br>
+<br>
+*For a 1 bedroom<br>
+** In minutes
+</form>
